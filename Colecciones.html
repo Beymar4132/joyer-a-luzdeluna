@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colecciones de Joyas - Luna de Luz</title>
+    <style>
+        /* CSS para las colecciones de joyas */
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #FAF3E0, #FFE5B4);
+            color: #4a4a4a;
+        }
+
+        header {
+            background: linear-gradient(45deg, #C0A060, #D4AF37);
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo img {
+            height: 60px;
+        }
+
+        .titulo-principal {
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Georgia', serif;
+            margin: 10px 0;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(45deg, #e66a30, #ffff00);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            color: #D4AF37;
+        }
+
+        .hero p {
+            color: #8B6F43;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            background-color: #f3e8d8;
+        }
+
+        .gallery .collection-item {
+            text-align: center;
+            width: 90%;
+            max-width: 280px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            padding: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .gallery h3 {
+            color: #8B6F43;
+            margin-top: 10px;
+        }
+
+        .back-to-top {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .back-to-top a {
+            color: #fff;
+            background: #C0A060;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .back-to-top a:hover {
+            background: #D4AF37;
+        }
+
+        footer {
+            background: linear-gradient(45deg, #C0A060, #D4AF37);
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        footer .footer-logo img {
+            height: 60px;
+        }
+
+        /* Media Queries para adaptabilidad */
+        @media (max-width: 768px) {
+            .titulo-principal {
+                font-size: 36px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            header .logo img {
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="galeria/logo.webp" alt="Logo de Luz de Luna">
+        </div>
+        <h1 class="titulo-principal">Luz de Luna</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Inicio.html">Introducción</a></li>
+                <li><a href="Colecciones.html">Colecciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Inicio" class="hero">
+        <h1>Colecciones de Joyas en Luna de Luz</h1>
+        <p>Descubre nuestras exquisitas colecciones, cada una diseñada para resaltar tu estilo único y sofisticado. ¡Sumérgete en el mundo de la elegancia!</p>
+    </section>
+
+    <section id="colecciones" class="gallery">
+        <!-- Colección de Anillos -->
+        <div class="collection-item">
+            <img src="galeria/pl1.jpg" alt="Colección de Anillos">
+            <h3>Colección de Anillos</h3>
+            <p>Anillos de lujo para cada ocasión especial.</p>
+        </div>
+
+        <!-- Colección de Pulseras -->
+        <div class="collection-item">
+            <img src="galeria/pl2.jpg" alt="Colección de Pulseras">
+            <h3>Colección de Pulseras</h3>
+            <p>Delicados y sofisticados diseños de pulseras.</p>
+        </div>
+
+        <!-- Colección de Collares -->
+        <div class="collection-item">
+            <img src="galeria/pl3.jpg" alt="Colección de Collares">
+            <h3>Colección de Collares</h3>
+            <p>Elegantes collares para complementar cualquier estilo.</p>
+        </div>
+
+        <!-- Colección de Pendientes -->
+        <div class="collection-item">
+            <img src="galeria/pl4.jpg" alt="Colección de Pendientes">
+            <h3>Colección de Pendientes</h3>
+            <p>Pendientes exclusivos, desde minimalistas hasta glamorosos.</p>
+        </div>
+    </section>
+
+    <div class="back-to-top">
+        <a href="index.html">Volver</a>
+    </div>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="galeria/logo.webp" alt="Logo de Luna de Luz">
+        </div>
+        <p>&copy; 2024 Luna de Luz. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
